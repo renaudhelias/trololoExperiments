@@ -5,3 +5,6 @@
 50 if asc(a$)=238 then 60 else if asc(a$)<>32 then pen 3:print chr$(238):locate x%,y%+1:print " ":goto 20
 60 if y%=1 then locate x%,y%+1:print " ":goto 20
 70 goto 30
+
+list
+goto 20
