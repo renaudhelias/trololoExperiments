@@ -1,0 +1,7 @@
+10 mode 1:pen 1:paper 0:border 1:ink 0,1:ink 1,24:ink 2,20:ink 3,6:cat
+20 x%=int(rnd*39)+1:y%=24
+30 pen 2:locate x%,y%:print chr$(239)
+40 locate x%,y%+1:print " ":y%=y%-1:locate x%,y%:a$=copychr$(#0)
+50 if asc(a$)=238 then 60 else if asc(a$)<>32 then pen 3:print chr$(238):locate x%,y%+1:print " ":goto 20
+60 if y%=1 then locate x%,y%+1:print " ":goto 20
+70 goto 30
